@@ -14,7 +14,7 @@ body
     text-align: center;
     background:linear-gradient(to right,rgba(0, 110, 255, 0.288),rgba(253, 255, 137, 0.5));
     height: max-content;
-    width: max-content;
+    width: 80vw;
     margin: auto;
     margin-top: 15vh;
     padding: 3vw;
