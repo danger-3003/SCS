@@ -69,6 +69,8 @@ input
     }
     .sign-up-btn
     {
+        
+        border-radius: 5px;
         width: 60%;
     }
 }
