@@ -14,7 +14,7 @@ body
     text-align: center;
     background:linear-gradient(to right,rgba(0, 110, 255, 0.288),rgba(253, 255, 137, 0.5));
     height: max-content;
-    width: 40vh;
+    width: 30vw;
     margin: auto;
     margin-top: 15vh;
     padding: 3vw;
@@ -23,7 +23,7 @@ body
 }
 input
 {
-    width: 36.2vh;
+    width: 90%;
     outline: none;
     border: 3px solid rgb(71, 133, 184);
     padding: 10px;
@@ -44,20 +44,31 @@ input
     color: white;
     display: block;
     margin: 2vh auto;
-    width: 20vh;
+    width: 12vw;
     border-radius: 5px;
     text-align: center;
-    padding: 1.5vh;
+    padding: 1.2vh;
     box-shadow: 0px 0px 10px rgb(59, 59, 255) inset;
 }
 .gmail,.facebook
 {
     background-color: white;
     color: black;
-    width: 30vh;
+    width: 17vw;
 }
 .logo
 {
     float: left;
-    height: 3vh;
+    height: 2.5vh;
+}
+@media (max-width:767px)
+{
+    .sign-up
+    {
+        width: 80%;
+    }
+    .sign-up-btn
+    {
+        width: 60%;
+    }
 }
