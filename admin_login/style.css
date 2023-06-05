@@ -14,7 +14,11 @@ body
     text-align: center;
     background:linear-gradient(to right,rgba(0, 110, 255, 0.288),rgba(253, 255, 137, 0.5));
     height: max-content;
+<<<<<<< HEAD
     width: 30vw;
+=======
+    width: 80vw;
+>>>>>>> 75a127d76bd405dfaa7d123c9d1241273d5e9cd8
     margin: auto;
     margin-top: 15vh;
     padding: 3vw;
