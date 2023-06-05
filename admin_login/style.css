@@ -2,12 +2,18 @@
 {
     margin: 0px;
     padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body
+{
+    padding-left: 10px;
+    margin-right: 10px;
 }
 .sign-up
 {
     text-align: center;
     background:linear-gradient(to right,rgba(0, 110, 255, 0.288),rgba(253, 255, 137, 0.5));
-    height: 65vh;
+    height: max-content;
     width: 40vh;
     margin: auto;
     margin-top: 15vh;
@@ -28,7 +34,6 @@ input
 }
 .limit
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
     margin-left: 10px;
 }
@@ -45,16 +50,14 @@ input
     padding: 1.5vh;
     box-shadow: 0px 0px 10px rgb(59, 59, 255) inset;
 }
-.option
-{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 .gmail,.facebook
 {
     background-color: white;
     color: black;
+    width: 30vh;
 }
 .logo
 {
-    height: 5vh;
+    float: left;
+    height: 3vh;
 }
