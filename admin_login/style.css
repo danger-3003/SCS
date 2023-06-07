@@ -38,14 +38,6 @@ input
     font-size: 14px;
     margin-left: 10px;
 }
-.checkbox
-{
-
-}
-.checkbox:checked ~ .primary
-{
-    display: none;
-}
 .sign-up-btn
 {
     background-color: rgb(0, 0, 126);
