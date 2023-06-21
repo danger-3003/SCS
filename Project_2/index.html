@@ -11,7 +11,7 @@
         .checkbox:checked~#Menu
         {
             top:0px;
-            opacity: 100;
+            opacity: 1;
         }
     </style>
 </head>
@@ -21,7 +21,7 @@
         <div class="text-white h-auto">
             <input type="checkbox" id="checkbox" class="hidden checkbox">
             <label class="sm:hidden text-2xl absolute right-5 top-4 z-50" for="checkbox"><i id="toggle_icon" class="fa-solid fa-bars"></i></label>
-            <ul id="Menu" class="bg-gray-800 p-4 sm:bg-gray-900 sm:visible sm:flex gap-3 text-center items-center opacity-0 relative top-[-350px] sm:top-[0px] transition-all duration-150">
+            <ul id="Menu" class="bg-gray-800 p-4 sm:bg-gray-900 sm:visible sm:flex gap-3 text-center items-center opacity-0 sm:opacity-100 relative top-[-350px] sm:top-[0px] transition-all duration-150">
                 <li class="p-3 sm:px-2 sm:py-0"><a href="">Home<i class="fa-solid fa-house visible sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-2 sm:py-0"><a href="">Menu<i class="fa-solid fa-utensils visible sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-2 sm:py-0"><a href="">Services<i class="fa-solid fa-bell-concierge visible sm:hidden ml-3"></i></a></li>
