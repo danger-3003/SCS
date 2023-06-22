@@ -1,0 +1,9 @@
+html
+{
+    scroll-behavior: smooth;
+}
+.checkbox:checked~#Menu
+{
+    top:0px;
+    opacity: 1;
+}

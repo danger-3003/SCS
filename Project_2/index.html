@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald Grill</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .checkbox:checked~#Menu
-        {
-            top:0px;
-            opacity: 1;
-        }
-    </style>
 </head>
 <body>
-    <nav class="w-screen sm:h-max sm:bg-gray-900 sm:shadow-xl mx-auto sm:flex justify-between items-center">
+    <nav class="w-full fixed sm:h-max sm:bg-gray-900 sm:shadow-xl z-10 mx-auto sm:flex justify-between items-center">
         <div><p class="font-sans font-bold bg-gray-900 shadow-xl text-white m-auto text-xl p-5 sm:pl-5 pr-0">Emerald Grill</p></div>
         <div class="text-white h-auto">
             <input type="checkbox" id="checkbox" class="hidden checkbox">
             <label class="sm:hidden text-2xl absolute right-5 top-4 z-50" for="checkbox"><i id="toggle_icon" class="fa-solid fa-bars"></i></label>
             <ul id="Menu" class="bg-gray-800 p-4 sm:bg-gray-900 sm:visible sm:flex gap-3 text-center items-center opacity-0 sm:opacity-100 relative top-[-350px] sm:top-[0px] transition-all duration-[0.4s]">
-                <li class="p-3 sm:px-2 sm:py-0"><a href="">Home<i class="fa-solid fa-house visible sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="">Menu<i class="fa-solid fa-utensils visible sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#home">Home<i class="fa-solid fa-house visible sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#menu">Menu<i class="fa-solid fa-utensils visible sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-2 sm:py-0"><a href="">Services<i class="fa-solid fa-bell-concierge visible sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-2 sm:py-0"><a href="">Contact<i class="fa-regular fa-address-card visible sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-4 sm:py-0"><button type="button" class="rounded-full px-2 py-1 text-amber-950 font-semibold bg-yellow-500 hover:bg-yellow-400 transition-colors">Login/SignUp</button></li>
             </ul>
         </div>
     </nav>
+    <section id="home" class="bg-[#050113] pt-[100px] py-20 flex justify-around items-center sm:gap-5">
+        <div>
+            <img src="burger.png" id="burger" style="filter: drop-shadow(1px 0px 2px rgb(255, 255, 225));" class="sm:ml-5 absolute top-28 mx-auto left-3 right-3 w-[200px] opacity-25 sm:opacity-100 sm:top-0 sm:left-0 sm:relative sm:w-[300px] lg:pl-0 lg:w-[450px]">
+        </div>
+        <div class="flex flex-col m-5 sm:mr-[20px] text-white sm:w-[450px] sm:pt-5 lg:-pt-12 lg:text-2xl lg:w-[600px]">
+            <h1 class="text-center mb-4 font-bold font-serif text-2xl lg:text-4xl">Emerald Grill</h1>
+            <p class="text-center mb-2 font-semibold text-xl lg:text-3xl text-green-400">We’ve found it! We’ve made it! We’re here!</p>
+            <p class="text-base text-center"><span class="font-extrabold">Emerald Grill</span> is one of the leading restaurant that became successful in bringing the special cheese burgers to the coast. The authentic taste comes from family recipes and from fresh, simple and tasteful ingredients straight from home.</p>
+            <button type="button" class="rounded-lg w-max m-auto mt-8 px-3 py-1 text-black font-semibold shadow-white bg-yellow-500 hover:bg-yellow-400 transition-colors">Explore Us</button>
+        </div>
+    </section>
+    <section id="menu" class="h-screen bg-red-300"></section>
 <script src="script.js"></script>
 </body>
 </html>
