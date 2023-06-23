@@ -7,3 +7,48 @@ html
     top:0px;
     opacity: 1;
 }
+#content
+{
+    animation-name: leftmove;
+    animation-duration: 1.5s ;
+    overflow: hidden;
+}
+@keyframes leftmove
+{
+    0%
+    {
+        right: 100px;
+        opacity: 0;
+    }
+    100%
+    {
+        right: 0px;
+        opacity: 1;
+    }
+}
+#our_menu
+{
+    animation-name: rightmove;
+    animation-duration: 1.5s;
+    overflow: hidden;
+}
+@keyframes rightmove
+{
+    0%
+    {
+        right: -30%;
+        opacity: 0;
+    }
+    100%
+    {
+        right: 0px;
+        opacity: 1;
+    }
+}
+@media (max-width:639px) and (min-width:500px)
+{
+    .cards
+    {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
