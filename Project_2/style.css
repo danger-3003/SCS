@@ -1,25 +1,12 @@
-html
-{
-    scroll-behavior: smooth;
-}
 .checkbox:checked~#Menu
 {
     top:0px;
     opacity: 1;
 }
-#view_more:checked~#menu_card
-{
-    height: auto;
-    padding: 40px;
-}
-#view_more:checked~#menu_card>img
-{
-    height: 320px;
-}
 #content
 {
     animation-name: leftmove;
-    animation-duration: 2s ;
+    animation-duration: 1.5s ;
     overflow: hidden;
 }
 @keyframes leftmove
@@ -38,7 +25,7 @@ html
 #our_menu
 {
     animation-name: rightmove;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     overflow: hidden;
 }
 @keyframes rightmove
@@ -54,7 +41,7 @@ html
         opacity: 1;
     }
 }
-@media (max-width:639px) and (min-width:500px)
+@media (max-width:639px) and (min-width:400px)
 {
     .cards
     {

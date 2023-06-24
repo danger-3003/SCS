@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,13 @@
             <ul id="Menu" class="bg-gray-800 p-4 sm:bg-gray-900 sm:visible sm:flex gap-3 text-center items-center opacity-0 sm:opacity-100 relative top-[-350px] sm:top-[0px] transition-all duration-[0.4s]">
                 <li class="p-3 sm:px-2 sm:py-0"><a href="#home">Home<i class="fa-solid fa-house block sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-2 sm:py-0"><a href="#menu">Menu<i class="fa-solid fa-utensils block sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="services">Services<i class="fa-solid fa-bell-concierge block sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#services">Services<i class="fa-solid fa-bell-concierge block sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-2 sm:py-0"><a href="">Contact<i class="fa-regular fa-address-card block sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-4 sm:py-0"><button type="button" class="rounded-full px-2 py-1 text-amber-950 font-semibold bg-yellow-500 hover:bg-yellow-400 transition-colors">Login/SignUp</button></li>
             </ul>
         </div>
     </nav>
-    <section id="home" class="bg-[#050113] pt-[100px] pb-[50px] mb-10 flex justify-around items-center sm:gap-5">
+    <section id="home" class="bg-[#050113] pt-[100px] pb-9 mb-5 flex justify-around items-center sm:gap-5">
         <div>
             <img src="burger.png" id="burger" style="filter: drop-shadow(1px 0px 2px rgb(255, 255, 225));" class="sm:ml-5 absolute top-28 mx-auto left-3 right-3 w-[200px] opacity-25 sm:opacity-100 sm:top-0 sm:left-0 sm:relative sm:w-[300px] lg:pl-0 lg:w-[450px]">
         </div>
@@ -36,30 +36,28 @@
             <button type="button" class="rounded-lg w-max m-auto mt-8 px-3 py-1 text-black font-semibold shadow-white bg-yellow-400 hover:bg-yellow-300 transition-colors animate-pulse">Explore Us</button>
         </div>
     </section>
-    <section id="menu">
+    <section id="menu" class="flex flex-col">
         <div class="h-max flex flex-col items-center">
-            <div id="our_menu" class="relative text-[#050113] mt-7 font-bold text-4xl">Our Menu</div>
+            <div id="our_menu" class="relative text-[#050113] mt-5 font-bold text-4xl">Our Menu</div>
             <div class="cards grid sm:grid-cols-3 lg:grid-cols-4 gap-1 mt-7 s sm:mr-3">
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-28 w-[170px] sm:h-36 sm:w-48 p-2 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
             </div>
         </div>
-        <input type="checkbox" class="hidden" id="view_more">
-        <label for="view_more">
-            <div class="text-center w-max mx-auto font-semibold text-red-800 text-2xl underline cursor-pointer p-1 mb-4">View More</div>
-        </label>
-        <div id="menu_card" class="opacity-100 h-0 w-full bg-gray-900 flex justify-center transition-all duration-300">
-            <img src="" alt="" class="h-0 w-80 transition-all duration-300">
+        <button type="button" id="view_more" onclick="menu_card()" class="text-xl font-mono font-black bg-yellow-300 underline p-5 transition-colors duration-300">View More</button>
+        <div id="menu_cards" class="opacity-100 w-full bg-gray-900 flex justify-center flex-wrap gap-0 sm:gap-5 lg:gap-28 transition-all duration-300">
+            <img src="burger.png" class="menu_card1 h-0 w-80 transition-all duration-300">
+            <img src="burger.png" class="menu_card2 h-0 w-80 transition-all duration-300">
         </div>
     </section>
-    <section id="services" class="p-5">
-        <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates, praesentium et deserunt, dignissimos explicabo repellendus assumenda placeat rem, qui voluptatum? Asperiores explicabo reiciendis eveniet quia aliquid quidem quaerat rerum incidunt laborum, quas molestias eligendi aut sequi. Nam laudantium sed minus, libero ullam ipsum quibusdam amet eum exercitationem rerum impedit sequi quos animi porro consectetur, magnam totam voluptatem labore velit voluptate dolorum dolore doloremque ab cum. Provident qui impedit repudiandae distinctio velit reprehenderit illum iste laborum quisquam? Autem nisi corrupti iure ad totam iste quasi, libero quisquam nostrum vel necessitatibus, soluta quaerat! Ad tempore at magnam, quaerat dolorum iste veritatis.</div>
+    <section id="services">
+        <div class="p-5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates, praesentium et deserunt, dignissimos explicabo repellendus assumenda placeat rem, qui voluptatum? Asperiores explicabo reiciendis eveniet quia aliquid quidem quaerat rerum incidunt laborum, quas molestias eligendi aut sequi. Nam laudantium sed minus, libero ullam ipsum quibusdam amet eum exercitationem rerum impedit sequi quos animi porro consectetur, magnam totam voluptatem labore velit voluptate dolorum dolore doloremque ab cum. Provident qui impedit repudiandae distinctio velit reprehenderit illum iste laborum quisquam? Autem nisi corrupti iure ad totam iste quasi, libero quisquam nostrum vel necessitatibus, soluta quaerat! Ad tempore at magnam, quaerat dolorum iste veritatis.</div>
     </section>
 <script src="script.js"></script>
 </body>
