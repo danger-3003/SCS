@@ -19,7 +19,7 @@ html
 #content
 {
     animation-name: leftmove;
-    animation-duration: 1.5s ;
+    animation-duration: 2s ;
     overflow: hidden;
 }
 @keyframes leftmove
@@ -38,7 +38,7 @@ html
 #our_menu
 {
     animation-name: rightmove;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     overflow: hidden;
 }
 @keyframes rightmove
