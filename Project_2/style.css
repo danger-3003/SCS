@@ -7,6 +7,15 @@ html
     top:0px;
     opacity: 1;
 }
+#view_more:checked~#menu_card
+{
+    height: auto;
+    padding: 40px;
+}
+#view_more:checked~#menu_card>img
+{
+    height: 320px;
+}
 #content
 {
     animation-name: leftmove;

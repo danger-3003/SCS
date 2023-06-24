@@ -17,10 +17,10 @@
             <input type="checkbox" id="checkbox" class="hidden checkbox">
             <label class="sm:hidden text-2xl absolute right-5 top-4 z-50" for="checkbox"><i id="toggle_icon" class="fa-solid fa-bars"></i></label>
             <ul id="Menu" class="bg-gray-800 p-4 sm:bg-gray-900 sm:visible sm:flex gap-3 text-center items-center opacity-0 sm:opacity-100 relative top-[-350px] sm:top-[0px] transition-all duration-[0.4s]">
-                <li class="p-3 sm:px-2 sm:py-0"><a href="#home">Home<i class="fa-solid fa-house visible sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="#menu">Menu<i class="fa-solid fa-utensils visible sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="">Services<i class="fa-solid fa-bell-concierge visible sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="">Contact<i class="fa-regular fa-address-card visible sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#home">Home<i class="fa-solid fa-house block sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#menu">Menu<i class="fa-solid fa-utensils block sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="services">Services<i class="fa-solid fa-bell-concierge block sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="">Contact<i class="fa-regular fa-address-card block sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-4 sm:py-0"><button type="button" class="rounded-full px-2 py-1 text-amber-950 font-semibold bg-yellow-500 hover:bg-yellow-400 transition-colors">Login/SignUp</button></li>
             </ul>
         </div>
@@ -36,18 +36,30 @@
             <button type="button" class="rounded-lg w-max m-auto mt-8 px-3 py-1 text-black font-semibold shadow-white bg-yellow-400 hover:bg-yellow-300 transition-colors animate-pulse">Explore Us</button>
         </div>
     </section>
-    <section id="menu" class="h-max pb-10 flex flex-col items-center">
-        <div id="our_menu" class="relative text-[#050113] mt-7 font-bold text-4xl text-center">Our Menu</div>
-        <div class="cards grid sm:grid-cols-3 lg:grid-cols-4 gap-1 mt-7 sm:mr-3">
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
-            <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+    <section id="menu">
+        <div class="h-max flex flex-col items-center">
+            <div id="our_menu" class="relative text-[#050113] mt-7 font-bold text-4xl">Our Menu</div>
+            <div class="cards grid sm:grid-cols-3 lg:grid-cols-4 gap-1 mt-7 s sm:mr-3">
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden sm:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+                <div id="card" class="rounded-xl h-36 w-48 p-5 m-5 bg-white flex felx-col items-center justify-center hover:rotate-2 duration-300 hidden lg:block" style="box-shadow: 1px 0px 10px black;"><img src="" alt="" class="h-full w-full drop-shadow-lg"></div>
+            </div>
         </div>
+        <input type="checkbox" class="hidden" id="view_more">
+        <label for="view_more">
+            <div class="text-center w-max mx-auto font-semibold text-red-800 text-2xl underline cursor-pointer p-1 mb-4">View More</div>
+        </label>
+        <div id="menu_card" class="opacity-100 h-0 w-full bg-gray-900 flex justify-center transition-all duration-300">
+            <img src="" alt="" class="h-0 w-80 transition-all duration-300">
+        </div>
+    </section>
+    <section id="services">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates, praesentium et deserunt, dignissimos explicabo repellendus assumenda placeat rem, qui voluptatum? Asperiores explicabo reiciendis eveniet quia aliquid quidem quaerat rerum incidunt laborum, quas molestias eligendi aut sequi. Nam laudantium sed minus, libero ullam ipsum quibusdam amet eum exercitationem rerum impedit sequi quos animi porro consectetur, magnam totam voluptatem labore velit voluptate dolorum dolore doloremque ab cum. Provident qui impedit repudiandae distinctio velit reprehenderit illum iste laborum quisquam? Autem nisi corrupti iure ad totam iste quasi, libero quisquam nostrum vel necessitatibus, soluta quaerat! Ad tempore at magnam, quaerat dolorum iste veritatis.</div>
     </section>
 <script src="script.js"></script>
 </body>
