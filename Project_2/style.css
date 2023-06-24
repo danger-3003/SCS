@@ -1,6 +1,6 @@
 .checkbox:checked~#Menu
 {
-    top:0px;
+    top:68px;
     opacity: 1;
 }
 #content
