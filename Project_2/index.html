@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald Grill</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="output.css"> -->
+    <link rel="stylesheet" href="output.css">
     <link rel="icon" href="logo.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,10 +17,10 @@
             <input type="checkbox" id="checkbox" class="hidden checkbox">
             <label class="sm:hidden text-2xl absolute right-5 top-4 z-50" for="checkbox"><i id="toggle_icon" class="fa-solid fa-bars"></i></label>
             <ul id="Menu" class="bg-gray-800 p-4 text-center items-center opacity-0 sm:opacity-100 absolute w-full sm:bg-gray-900 sm:flex gap-3 sm:relative top-[-350px] sm:top-0 transition-all duration-[0.4s]">
-                <li class="p-3 sm:px-2 sm:py-0"><a href="#home">Home<i class="fa-solid fa-house block sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="#menu">Menu<i class="fa-solid fa-utensils block sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="#services">Services<i class="fa-solid fa-bell-concierge block sm:hidden ml-3"></i></a></li>
-                <li class="p-3 sm:px-2 sm:py-0"><a href="">Contact<i class="fa-regular fa-address-card block sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#home">Home<i class="fa-solid fa-house visible sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#menu">Menu<i class="fa-solid fa-utensils visible sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="#services">Services<i class="fa-solid fa-bell-concierge visible sm:hidden ml-3"></i></a></li>
+                <li class="p-3 sm:px-2 sm:py-0"><a href="">About<i class="fa-regular fa-address-card visible sm:hidden ml-3"></i></a></li>
                 <li class="p-3 sm:px-4 sm:py-0"><button type="button" class="rounded-full px-2 py-1 text-amber-950 font-semibold bg-yellow-500 hover:bg-yellow-400 transition-colors">Login/SignUp</button></li>
             </ul>
         </div>
@@ -50,8 +50,8 @@
                 <div id="card" class="rounded-lg h-28 w-[170px] sm:h-36 sm:w-48 p-[5px] m-5 bg-white flex felx-col items-center justify-center" style="box-shadow: 1px 0px 10px black;"><img src="ice cream.jpeg" alt="" class="h-full w-full drop-shadow-lg rounded-md"></div>
             </div>
         </div>
-        <button type="button" id="view_more" onclick="menu_card()" class="text-xl font-sans font-semibold underline p-5 transition-colors duration-300">View More</button>
-        <div id="menu_cards" class="opacity-100 w-full bg-gray-900 flex justify-center flex-wrap gap-0 sm:gap-5 lg:gap-28 transition-all duration-300">
+        <button type="button" id="view_more" onclick="menu_card()" class="text-xl font-sans font-semibold text-red-500 underline p-5 transition-colors duration-300">View More</button>
+        <div id="menu_cards" class="opacity-100 w-full bg-gray-900 flex justify-center flex-wrap lg:gap-24 transition-all duration-300">
             <img src="menu-card-all.jpg" class="menu_card1 h-0 w-96 transition-all duration-300">
             <img src="menu-card-all.jpg" class="menu_card2 h-0 w-96 transition-all duration-300">
         </div>

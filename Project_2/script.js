@@ -20,6 +20,7 @@ function menu_card()
     menu_cards.classList.toggle("p-10");
     console.log(menu_cards);
     menu_cards.classList.toggle("h-auto");
+    menu_cards.classList.toggle("gap-7");
     if (view_more.innerText === "View More")
     {
         view_more.innerText="View Less";
