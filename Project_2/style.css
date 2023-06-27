@@ -1,6 +1,6 @@
 .checkbox:checked~#Menu
 {
-    top:70px;
+    top:68px;
     opacity: 1;
 }
 #content
@@ -46,5 +46,14 @@
     .cards
     {
         grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (max-width:977px)
+{
+    #Feedback
+    {
+        border-left: 0px;
+        padding-right: 1.75rem;
+        border-top-width: 2px;
     }
 }
