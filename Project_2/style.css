@@ -1,8 +1,3 @@
-.checkbox:checked~#Menu
-{
-    top:68px;
-    opacity: 1;
-}
 #content
 {
     animation-name: leftmove;

@@ -1,14 +1,31 @@
-var toggle = document.getElementById("toggle_icon");
 var menu = document.getElementById("Menu");
-toggle.addEventListener("click",()=>{
-    console.log("hello");
+var toggle = document.getElementById("toggle_icon");
+let button = document.querySelectorAll(".nav_list");
+button.forEach(element => {
+    element.addEventListener('click',function()
+    {
+        if(!menu.classList.contains("hidden"))
+        {
+            toggle.classList.replace("fa-times","fa-bars");
+            menu.classList.replace("top-[68px]","top-[-345px]");
+            
+        }
+        button.forEach(btn =>btn.classList.remove('underline'));
+        this.classList.add('underline');
+    })
+});
+toggle.addEventListener("click",()=>{  
     if(toggle.classList.contains('fa-bars'))
     {
         toggle.classList.replace("fa-bars","fa-times");
+        menu.classList.replace("top-[-345px]","top-[68px]");
+        menu.classList.add("opacity-100");
     }
     else
     {
         toggle.classList.replace("fa-times","fa-bars");
+        menu.classList.replace("top-[68px]","top-[-345px]");
+        menu.classList.add("opacity-0");
     }
 })
 function menu_card()
