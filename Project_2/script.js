@@ -4,11 +4,10 @@ let button = document.querySelectorAll(".nav_list");
 button.forEach(element => {
     element.addEventListener('click',function()
     {
-        if(!menu.classList.contains("hidden"))
+        if(menu.classList.contains("fa-times"))
         {
             toggle.classList.replace("fa-times","fa-bars");
             menu.classList.replace("top-[68px]","top-[-345px]");
-            
         }
         button.forEach(btn =>btn.classList.remove('underline'));
         this.classList.add('underline');
